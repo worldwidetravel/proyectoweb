@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sobre mi</h1>
+    <h2>Hola</h2>
+    <p>Esto es acerca de Ana Gonzalez</p>
+</body>
+</html> -->
+
+{% extends 'core/base.html' %}
+{%load static %}
+
+{% block title %}About{% endblock %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block content %}
+    <h2>Bienvenidos</h2>
+    <p>Esto es about.</p>
+    {% endblock %}
